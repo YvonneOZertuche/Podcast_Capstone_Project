@@ -41,10 +41,9 @@ const Listened = () => {
 
   return (
     <>
-    <br  />
-    <br  />
-    <br  />
-    <h1>Listened</h1>
+    
+    
+    <h1 className='text-red-700 font-sans mt-3'>Listened</h1>
       {!listenedPodcast ? (
         <div>No podcasts to display</div>
 
@@ -52,8 +51,9 @@ const Listened = () => {
         listenedPodcast.map(podcastObj => {
           return (
             <>
-            <div className="podcast changes">
-              <img key={podcastObj.id} src={podcastObj.image} alt='' />;
+            <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px justify-center'>
+           
+              <img key={podcastObj.id} src={podcastObj.image} alt='' className='m-y-0 border-2 border-red-600'/>
               <figure>
                 <figcaption>{podcastObj.podcastName}:</figcaption>
                 <audio controls src={podcastObj.audioLink}></audio>
@@ -62,19 +62,20 @@ const Listened = () => {
               <br  />
               <br  />
               <button
-                className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
+                className='rounded ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'
                 onClick={() => deletePodcast(podcastObj.id)}>
                 Delete
               </button>{' '}
-              </div>
+             
               <br  />
               <br  />
              
               <button
                 onClick={() => updatePodcast(podcastObj.id)}
-                className='font-serifpx-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'>
+                className='rounded ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'>
                 Update
               </button>
+               </div>
               {isUpdate ? <Update id={podcastObj.id} /> : ''}
              
             </>

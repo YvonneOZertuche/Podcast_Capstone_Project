@@ -96,7 +96,7 @@ const SearchPodcast = () => {
         searchResults.map(podcastObj => {
           return (
             <>
-              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px   justify-center'>
+              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px justify-center'>
                 <img
                   className='m-y-0 border-2 border-red-600'
                   key={podcastObj.id}
