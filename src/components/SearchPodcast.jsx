@@ -69,7 +69,7 @@ const SearchPodcast = () => {
         <div className='mt-20 grid grid-cols-1'>
           <div className='place-self-center'>
             <input
-              className='text-red-600 italic w-80 text-center font-serif rounded'
+              className='text-red-600 italic w-80 text-center font-sans rounded'
               onChange={e => setSearchInput(e.target.value)}
               type='text'
               placeholder='Search for a Podcast Episode'
@@ -78,7 +78,7 @@ const SearchPodcast = () => {
           {''}
           <div className='place-self-center p-0'>
             <button
-              className='focus:outline-none focus:ring focus:ring-yellow-900 m-5 mb-10 rounded border font-serif border-red-600 bg-red-600 py-2 px-5 font-bold text-white hover:bg-red-800'
+              className='focus:outline-none focus:ring focus:ring-white-900 m-5 mb-10 rounded border font-sans border-red-600 bg-red-600 py-2 px-5 font-bold text-white hover:bg-red-800'
               onClick={handleInput}
               type='submit'
             >
