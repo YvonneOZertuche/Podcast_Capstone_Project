@@ -58,13 +58,13 @@ const Following = () => {
                         <audio controls src={podcastObj.audioLink}></audio>
                       </figure>
                       <button
-                        className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-lg'
+                        className='font-sans px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-lg'
                         onClick={() => deletePodcast(podcastObj.id)}
                       >
                         Delete
                       </button>{' '}
                       <button
-                        className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
+                        className='font-sans px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
                         onClick={() => handleUpdate(podcastObj.id)}
                       >
                         Update

@@ -17,7 +17,7 @@ import Logout from './components/Logout'
 import Menu from './components/layouts/Menu'
 import RequireAuth from './components/RequireAuth';
 import Modal from './components/Modal'
-
+import Results from './components/Results'
 
 
 let composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE || compose;

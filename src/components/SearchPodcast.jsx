@@ -96,7 +96,7 @@ const SearchPodcast = () => {
         searchResults.map(podcastObj => {
           return (
             <>
-              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px self-center justify-center'>
+              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px   justify-center'>
                 <img
                   className='m-y-0 border-2 border-red-600'
                   key={podcastObj.id}
@@ -114,7 +114,7 @@ const SearchPodcast = () => {
 
                 <button type='button'>
                   <button
-                    className='focus:outline-none focus:ring focus:ring-yellow-900 m-20 ml-3 pl-3 justify-center font-serif border-red-700 bg-red-600 py-2 px-5 font-bold text-white'
+                    className='focus:outline-none focus:ring focus:ring-white-900 m-20 ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'
                     onClick={() => saveToFollowing(podcastObj)} >
                     Save to Following
                   </button>
@@ -123,7 +123,7 @@ const SearchPodcast = () => {
                 
                   <button type='button' >
                     <button 
-                    className='focus:outline-none focus:ring focus:ring-yellow-900 ml-3 pl-3 justify-center font-serif border-red-700 bg-red-600 py-2 px-5 font-bold text-white'
+                    className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'
                     onClick={() => saveToListened(podcastObj)}>
                       Save to Listened
                     </button>
