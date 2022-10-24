@@ -26,8 +26,8 @@ import Navbar from 'react-bootstrap/Navbar'
         <Container>
           <Navbar.Brand className='text-white text-xl' href='/'>You Are What You Listen To</Navbar.Brand>
           <Nav className='me-auto'>
-            <Nav.Link className='text-white text-sm' href='/following'>Podcasts You're Following</Nav.Link>
             <Nav.Link className='text-white text-sm' href='/listened'>Podcasts You've Listened To</Nav.Link>
+            <Nav.Link className='text-white text-sm' href='/following'>Podcasts Your're Following</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link className='text-white text-sm' href='/searchpodcast'>Search</Nav.Link>

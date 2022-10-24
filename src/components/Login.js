@@ -78,7 +78,7 @@ const Login = () => {
             <div>
               <button
                 type='submit'
-                className='font-serif text-white group relative flex w-full justify-center rounded bg-sky-600 py-2 px-4 text-md   font-xlarge text-bold-black hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-offset-2'
+                className='font-serif text-white group relative flex w-full justify-center rounded bg-sky-600 py-2 px-4 text-md   font-xlarge text-bold-black hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:ring-offset-2'
               >
                 Log In
               </button>

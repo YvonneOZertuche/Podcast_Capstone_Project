@@ -49,8 +49,7 @@ const SearchPodcast = () => {
         q: searchInput,
         sort_by_date: 0,
         type: 'episode',
-        len_min: 3,
-        len_max:60
+    
       })
       .then(response => {
         // Get response json data here
@@ -69,7 +68,7 @@ const SearchPodcast = () => {
         <div className='mt-20 grid grid-cols-1'>
           <div className='place-self-center'>
             <input
-              className='text-red-600 italic w-80 text-center font-sans rounded'
+              className='text-sky-600 italic w-80 text-center font-sans rounded'
               onChange={e => setSearchInput(e.target.value)}
               type='text'
               placeholder='Search for a Podcast Episode'
@@ -78,7 +77,7 @@ const SearchPodcast = () => {
           {''}
           <div className='place-self-center p-0'>
             <button
-              className='focus:outline-none focus:ring focus:ring-white-900 m-5 mb-10 rounded font-sans border-red-600 bg-red-600 py-2 px-5 font-bold text-white hover:bg-red-800'
+              className='focus:outline-none focus:ring focus:ring-white-900 m-5 mb-10 rounded font-sans border-sky-600 bg-sky-600 py-2 px-5 font-bold text-white hover:bg-sky-800'
               onClick={handleInput}
               type='submit'
             >
@@ -96,9 +95,9 @@ const SearchPodcast = () => {
         searchResults.map(podcastObj => {
           return (
             <>
-              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-600 border-spacing-px justify-center'>
+              <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-sky-600 border-spacing-px justify-center'>
                 <img
-                  className='m-y-0 border-2 border-red-600'
+                  className='m-y-0 border-2 border-sky-600'
                   key={podcastObj.id}
                   src={podcastObj.image}
                   alt=''
@@ -111,23 +110,19 @@ const SearchPodcast = () => {
                   </figcaption>
                   <audio controls src={podcastObj.audioLink}></audio>
                 </figure> */}
-
-                <button type='button'>
+                
                   <button
-                    className='focus:outline-none focus:ring focus:ring-white-900 m-20 ml-3 pl-3 justify-center rounded font-sans border-red-600 bg-red-600 py-2 px-5 text-bold text-white'
+                    className='focus:outline-none focus:ring focus:ring-white-900 m-20 ml-3 pl-3 justify-center rounded font-sans border-sky-600 bg-sky-600 py-2 px-5 text-bold text-white'
                     onClick={() => saveToFollowing(podcastObj)} >
                     Save to Following
                   </button>
-                </button>
-
-                
-                  <button type='button' >
+                 
                     <button 
-                    className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center rounded font-sans border-red-600 bg-red-600 py-2 px-5 text-bold  text-white'
+                    className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center rounded font-sans border-sky-600 bg-sky-600 py-2 px-5 text-bold  text-white'
                     onClick={() => saveToListened(podcastObj)}>
                       Save to Listened
                     </button>
-                  </button>
+                
                
               </div>
             </>

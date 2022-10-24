@@ -29,7 +29,7 @@ const Register = () => {
       <container>
         <div className='justify-center ml-10 mr-10 '>
           <div className='  py-3 py-md-5'>
-            <h1 className=' font-sans text-red-600 mt-10 text-bold'>
+            <h1 className=' font-sans text-sky-600 mt-10 text-bold'>
               Create an Account
             </h1>
             <br />
@@ -81,7 +81,7 @@ const Register = () => {
               <button
                 type='submit'
                 className='font-sans mt-3
-              ml-3 pl-3 py-2 px-4 rounded font-bold text-white bg-red-600'
+              ml-3 pl-3 py-2 px-4 rounded font-bold text-white bg-sky-600'
               >
                 Submit
               </button>
