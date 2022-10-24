@@ -78,7 +78,7 @@ const SearchPodcast = () => {
           {''}
           <div className='place-self-center p-0'>
             <button
-              className='focus:outline-none focus:ring focus:ring-white-900 m-5 mb-10 rounded border font-sans border-red-600 bg-red-600 py-2 px-5 font-bold text-white hover:bg-red-800'
+              className='focus:outline-none focus:ring focus:ring-white-900 m-5 mb-10 rounded font-sans border-red-600 bg-red-600 py-2 px-5 font-bold text-white hover:bg-red-800'
               onClick={handleInput}
               type='submit'
             >
@@ -114,7 +114,7 @@ const SearchPodcast = () => {
 
                 <button type='button'>
                   <button
-                    className='focus:outline-none focus:ring focus:ring-white-900 m-20 ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'
+                    className='focus:outline-none focus:ring focus:ring-white-900 m-20 ml-3 pl-3 justify-center rounded font-sans border-red-600 bg-red-600 py-2 px-5 text-bold text-white'
                     onClick={() => saveToFollowing(podcastObj)} >
                     Save to Following
                   </button>
@@ -123,7 +123,7 @@ const SearchPodcast = () => {
                 
                   <button type='button' >
                     <button 
-                    className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center font-sans border-red-700 bg-red-600 py-2 px-5  text-white'
+                    className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center rounded font-sans border-red-600 bg-red-600 py-2 px-5 text-bold  text-white'
                     onClick={() => saveToListened(podcastObj)}>
                       Save to Listened
                     </button>

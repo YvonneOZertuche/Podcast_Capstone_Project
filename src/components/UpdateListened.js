@@ -26,9 +26,9 @@ const Update = (props) => {
   
     <>
      <form >
-     <div className='background-color: bg-red-400' variant='light'>
+     <div>
       <input type = 'text' onChange={(e) => setIsUpdate(e.target.value)}></input>
-      <button onClick={(e) => handleSubmit(e)}className='font-serif py-20 mt-4 btn btn-lg btn-danger btn-block'>
+      <button onClick={(e) => handleSubmit(e)}className='rounded ml-2 pl-2 justify-center font-sans bg-red-600 py-2 px-4  text-white'>
         Submit
       </button>
       </div>

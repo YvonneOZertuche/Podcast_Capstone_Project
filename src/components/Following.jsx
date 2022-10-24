@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Updates from './UpdateFollowing'
+import Update from './UpdateFollowing'
 
 const Following = () => {
   const [followedPodcast, setFollowedPodcast] = useState([])
@@ -42,40 +42,45 @@ const Following = () => {
     <>
       {isUpdate ? <Update id={podcastId} /> : ''}
 
-      <div className='m-20'>
+      <h1 className='text-red-700 font-sans mt-3'>Podcasts You're Following</h1>
         {!followedPodcast ? (
           <di>
           <h1>Not following any podcasts.</h1>
           </di>
         ) : (
+          
           followedPodcast.map(podcastObj => {
             return (
               <>
-                
-                      <img key={podcastObj.id} src={podcastObj.image} alt='' />
+                 <div className='m-10 ml-10  gap-4 columns-2 border-double border-2 border-red-700 border-spacing-px justify-center'>
+                      <img key={podcastObj.id} src={podcastObj.image} alt='' className='m-y-0 border-2 border-red-500'/>
                       <figure>
                         <figcaption>{podcastObj.podcastName}:</figcaption>
                         <audio controls src={podcastObj.audioLink}></audio>
                       </figure>
+                      <br />
+                      <br />
                       <button
-                        className='font-sans px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-lg'
+                        className='active:bg-sky-700 rounded ml-3 pl-3 justify-center font-sans bg-red-600 py-2 px-5  text-white'
                         onClick={() => deletePodcast(podcastObj.id)}
                       >
                         Delete
                       </button>{' '}
                       <button
-                        className='font-sans px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
+                        className='rounded ml-3 pl-3 justify-center font-sans bg-red-600 py-2 px-5  text-white'
                         onClick={() => handleUpdate(podcastObj.id)}
                       >
-                        Update
+                        Add Notes
                       </button>
-                      <p>{podcastObj.notes}</p>
-                 
+                      {/* <p>{podcastObj.notes}</p> */}
+                 </div>
+                 {isUpdate ? <Update id={podcastObj.id} /> : ''}
+
               </>
             )
           })
         )}
-      </div>
+      
     </>
   )
 }

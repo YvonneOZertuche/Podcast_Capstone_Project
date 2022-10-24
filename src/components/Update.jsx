@@ -18,14 +18,13 @@ const Update = props => {
   return (
     <>
       <form>
-        {/* <input type='text' onChange={e => setIsUpdate(e.target.value)}></input>
+        <input type='text' onChange={e => setIsUpdate(e.target.value)}></input>
         <br  />
         <button
           onClick={e => handleSubmit(e)}
-          className='font-serif py-20 mt-4 btn btn-lg btn-danger btn-block'
-        >
+          className='rounded ml-2 pl-2 justify-center font-sans bg-red-600 py-2 px-4  text-white'>
           Submit
-        </button> */}
+        </button>
 
         <div class='max-w-2xl mx-auto'>
           <label
