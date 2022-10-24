@@ -72,7 +72,7 @@ const Following = () => {
                       >
                         Add Notes
                       </button>
-                      {/* <p>{podcastObj.notes}</p> */}
+                      <div>{podcastObj.notes}</div>
                  </div>
                  {isUpdate ? <Update id={podcastObj.id} /> : ''}
 

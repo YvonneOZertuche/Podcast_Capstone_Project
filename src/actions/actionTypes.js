@@ -3,7 +3,7 @@ export const types = {
    'LOGIN_FAILED' : 'LOGIN_FAILED',
    'FETCH_PROFILE_FAIL': 'FETCH_PROFILE_FAIL',
    'FETCH_PROFILE_SUCCESS' : 'FETCH_PROFILE_SUCCESS',
-   'LOGOUT' : 'LOGOUT',
+   'LOGOUT': 'LOGOUT',
    'REGISTER_SUCCESS' : 'REGISTER_SUCCESS',
    'REGISTER_FAIL' : 'REGISTER_FAIL',
    
@@ -15,6 +15,8 @@ export const actionTypes = {
    ERROR: "ERROR",
    EDIT_UPDATE: "EDIT_UPDATE"
 };
+
+
 
 
  

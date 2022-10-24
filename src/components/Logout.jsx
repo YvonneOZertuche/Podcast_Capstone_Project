@@ -18,12 +18,13 @@ const Logout = () => {
   
   return (
     <>
-      <div className='font-serif bg-red-500 text-2xl text-end'>
+      <div className='font-serif bg-sky-700 text-2xl text-end'>
+   
       <button
         className='mr-7 pl-3 text-end py-2 px-5 text-white'
         onClick={(userLogout)}
         >
-        Logout Here
+        Logout
       </button>
       </div>
       <div className='divide-y divide-solid divide-black'>

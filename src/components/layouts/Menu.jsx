@@ -33,7 +33,7 @@ import Navbar from 'react-bootstrap/Navbar'
             <Nav.Link className='text-white text-sm' href='/searchpodcast'>Search</Nav.Link>
             <Nav.Link className='text-white text-sm' href='/register'>Create Account</Nav.Link>
             <Nav.Link className='text-white text-sm' href='/login'>Login</Nav.Link>
-            <Nav.Link className='text-white text-sm' href='/logout'>Logout</Nav.Link>
+            <Nav.Link className='text-white text-sm' href='/logout'>Quit</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

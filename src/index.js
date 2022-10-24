@@ -20,6 +20,7 @@ import Modal from './components/Modal'
 import Results from './components/Results'
 
 
+
 let composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE || compose;
 let store = createStore(reducer, {}, composeEnhancers(applyMiddleware(thunk)))
 
