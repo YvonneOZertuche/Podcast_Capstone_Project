@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Update from '../components/UpdateListened'
+import Modal from './Modal'
 
 const Listened = () => {
   const [listenedPodcast, setListenedPodcast] = useState([])
@@ -65,12 +66,16 @@ const Listened = () => {
                 onClick={() => deletePodcast(podcastObj.id)}>
                 Delete
               </button>{' '}
-              <button
+              <br  />
+              {/* <button
                 onClick={() => updatePodcast(podcastObj.id)}
                 className='rounded ml-3 pl-3 justify-center font-sans border-sky-700 bg-sky-600 py-2 px-5  text-white'>
                 Add Notes
-              </button>
+              </button> */}
+              <Modal />
+
                </div>
+              
               {isUpdate ? <Update id={podcastObj.id} /> : ''}
              
             </>
