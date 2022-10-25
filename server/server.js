@@ -6,7 +6,7 @@ const followingRoute = require('./routes/following/followingRoutes');
 const listenedRoute = require('./routes/listened/listenedRoutes');
 const usersRoute = require('./routes/users/usersRoutes');
 const app = express();
-const Port = process.env.PORT || 3001
+const PORT = process.env.PORT || 3001
 //middlewares
 app.use(express.json()) //pass incoming data
 
