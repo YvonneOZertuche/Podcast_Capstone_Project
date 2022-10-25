@@ -11,7 +11,10 @@ const PORT = process.env.PORT || 3001
 app.use(express.json()) //pass incoming data
 
 //routes
+app.get('/', (req, res)=>{
 
+   res.send('hello')
+})
 //users routes
 app.use('/api/v1/users', usersRoute)
 //following routes
