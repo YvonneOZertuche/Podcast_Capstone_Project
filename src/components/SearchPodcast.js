@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import FlashMessage from './FlashMessage'
 
 const { Client } = require('podcast-api')
 
@@ -116,6 +117,7 @@ const SearchPodcast = () => {
                     onClick={() => saveToFollowing(podcastObj)} >
                     Save to Following
                   </button>
+                  <FlashMessage  />
                  
                     <button 
                     className='focus:outline-none focus:ring focus:ring--900 ml-3 pl-3 justify-center rounded font-sans border-sky-600 bg-sky-600 py-2 px-5 text-bold  text-white'

@@ -1,10 +1,15 @@
 import React from 'react'
-import {render} from 'react-dom'
 import FlashMessage from 'react-flash-message'
 
-const FlashMessage = () => {
+const flashMessage = () => {
   return (
-    <div>FlashMessage</div>
+    <>
+    <FlashMessage duration={5000} >
+      The podcast has moved to your Following list.
+    </FlashMessage>
+
+    
+    </>
   )
 }
 
