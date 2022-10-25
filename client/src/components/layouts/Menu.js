@@ -22,7 +22,7 @@ import Navbar from 'react-bootstrap/Navbar'
  function Menu () {
   return (
     <>
-      <Navbar className='bg-sky-700'>
+      <Navbar className='bg-sky-700 flex flex-col'>
         <Container>
           <Navbar.Brand className='text-white text-xl' href='/'>You Are What You Listen To</Navbar.Brand>
           <Nav className='me-auto'>
