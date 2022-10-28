@@ -20,7 +20,7 @@ export const UpdateListened = newPodcast => {
 export const register = (formData, cb) => async dispatch => {
   try {
     //api call to our backend
-    let response = await axios.post('/api/v1/users/register', formData)
+    let response = await axios.post('https://nameless-scrubland-78350.herokuapp.com/api/v1/users/register', formData)
     let jwt = response.data.token 
     console.log("data retrieved from the server")
     
@@ -45,7 +45,7 @@ export const register = (formData, cb) => async dispatch => {
 export const login = (formData, cb) => async dispatch =>{
   try {
     //make an api call to /login
-    let response = await axios.post('/api/v1/users/login', formData)
+    let response = await axios.post('https://nameless-scrubland-78350.herokuapp.com/api/v1/users/login', formData)
     let token = response.data.token
 
     //dispatch action
